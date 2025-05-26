@@ -4,7 +4,8 @@ import "@/styles/fonts.css";
 import "@/styles/utils.css";
 
 import bgAppetizers from "@/assets/images/appetizers.png";
-import logo from "@/assets/logo.png";
+import bgCroffles from "@/assets/images/croffles.png";
+import logo from "@/assets/logo-transparent.png";
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -57,6 +58,10 @@ function App() {
           </Button>
         </Link>
       </Wrapper>
+
+      <div className="absolute top-0 md:top-0 -right-[50%] md:-right-[5%] opacity-10 rotate-45">
+        <img src={bgCroffles} className="h-full w-auto object-cover" />
+      </div>
 
       <div className="absolute top-[50%] md:top-0 -left-[50%] md:-left-[10%] opacity-10">
         <img src={bgAppetizers} className="h-full w-auto object-cover" />
