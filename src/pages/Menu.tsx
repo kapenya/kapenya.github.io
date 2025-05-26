@@ -21,7 +21,7 @@ function Menu() {
           <img src={menu2} />
         </div>
 
-        <Link to={RouteDefinition.MENU}>
+        <Link to={RouteDefinition.INDEX}>
           <Button
             className="mt-20 bg-gradient-to-r from-[#fee6a0] to-[#fec29b] hover:brightness-[95%]"
             variant="outline"
