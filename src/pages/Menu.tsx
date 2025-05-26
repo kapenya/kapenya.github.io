@@ -5,6 +5,8 @@ import "@/styles/utils.css";
 
 import menu1 from "@/assets/images/menu/1.png";
 import menu2 from "@/assets/images/menu/2.png";
+import menu3 from "@/assets/images/menu/3.png";
+
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -19,6 +21,7 @@ function Menu() {
         <div className="space-y-4 h-fit">
           <img src={menu1} />
           <img src={menu2} />
+          <img src={menu3} />
         </div>
 
         <Link to={RouteDefinition.INDEX}>
