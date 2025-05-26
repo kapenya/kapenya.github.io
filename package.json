@@ -6,6 +6,7 @@
   "homepage": "https://rangelojc.github.io/kapenya",
   "scripts": {
     "dev": "vite",
+    "postbuild": "cp dist/index.html dist/404.html",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
