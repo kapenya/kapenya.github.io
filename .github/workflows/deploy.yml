@@ -24,7 +24,7 @@ jobs:
       - name: Build the app
         run: |
           npm run build
-          cp dist/index.html dist/404.html
+          npm run postbuild
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
