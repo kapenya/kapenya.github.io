@@ -18,10 +18,10 @@ function Menu() {
   return (
     <Page className="!overflow-auto">
       <Wrapper className="flex flex-col items-center !min-h-screen pt-4 pb-20 !px-0">
-        <div className="space-y-4 h-fit">
-          <img src={menu1} />
-          <img src={menu2} />
-          <img src={menu3} />
+        <div className="space-y-4 h-fit w-full md:w-2/3">
+          <img src={menu1} className="md:border-2 rounded border-[#edc5b3]" />
+          <img src={menu2} className="md:border-2 rounded border-[#edc5b3]" />
+          <img src={menu3} className="md:border-2 rounded border-[#edc5b3]" />
         </div>
 
         <Link to={RouteDefinition.INDEX}>
