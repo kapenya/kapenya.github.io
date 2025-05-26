@@ -1,0 +1,39 @@
+import { Page, Wrapper } from "@/components/LayoutWidgets";
+import { initI18n } from "@/i18n";
+import "@/styles/fonts.css";
+import "@/styles/utils.css";
+
+import menu1 from "@/assets/images/menu/1.png";
+import menu2 from "@/assets/images/menu/2.png";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
+import { RouteDefinition } from "./main";
+
+function Menu() {
+  initI18n();
+
+  return (
+    <Page className="!overflow-auto">
+      <Wrapper className="flex flex-col items-center !min-h-screen pt-4 pb-20 !px-0">
+        <div className="space-y-4 h-fit">
+          <img src={menu1} />
+          <img src={menu2} />
+        </div>
+
+        <Link to={RouteDefinition.MENU}>
+          <Button
+            className="mt-20 bg-gradient-to-r from-[#fee6a0] to-[#fec29b] hover:brightness-[95%]"
+            variant="outline"
+            size="lg"
+          >
+            <ArrowLeft />
+            <span>Back To Home</span>
+          </Button>
+        </Link>
+      </Wrapper>
+    </Page>
+  );
+}
+
+export default Menu;
