@@ -12,11 +12,9 @@ import {
 import App from "./App";
 import Menu from "./Menu";
 
-const BASE_URL = "/kapenya";
-
 export enum RouteDefinition {
-  INDEX = BASE_URL,
-  MENU = `${BASE_URL}/menu`,
+  INDEX = "/",
+  MENU = "/menu",
 }
 
 const router = createBrowserRouter(
