@@ -8,7 +8,7 @@ import menu2 from "@/assets/images/menu/2.png";
 import menu3 from "@/assets/images/menu/3.png";
 
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RouteDefinition } from "./main";
 
@@ -24,16 +24,32 @@ function Menu() {
           <img src={menu3} className="md:border-2 rounded border-[#edc5b3]" />
         </div>
 
-        <Link to={RouteDefinition.INDEX}>
-          <Button
-            className="mt-20 bg-gradient-to-r from-[#fee6a0] to-[#fec29b] hover:brightness-[95%]"
-            variant="outline"
-            size="lg"
+        <div className="flex items-center justify-center md:flex-row flex-col gap-2 mt-20">
+          <Link
+            to={"https://m.me/100087288325076"}
+            target="_blank"
+            className="w-[230px]"
           >
-            <ArrowLeft />
-            <span>Back To Home</span>
-          </Button>
-        </Link>
+            <Button
+              className="bg-gradient-to-r from-[#5a99ff] to-[#0866ff] hover:brightness-[95%] text-white hover:text-white"
+              variant="outline"
+              size="lg"
+            >
+              <MessageCircle />
+              <span>Message us on Facebook</span>
+            </Button>
+          </Link>
+          <Link to={RouteDefinition.INDEX} className="w-[230px] md:w-fit">
+            <Button
+              className="bg-gradient-to-r from-[#fee6a0] to-[#fec29b] hover:brightness-[95%] w-full"
+              variant="outline"
+              size="lg"
+            >
+              <ArrowLeft />
+              <span>Back To Home</span>
+            </Button>
+          </Link>
+        </div>
       </Wrapper>
     </Page>
   );
