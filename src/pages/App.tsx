@@ -24,10 +24,7 @@ function App() {
         </div>
 
         <div className="flex-row-v-center mt-8">
-          <Link
-            to={"https://www.facebook.com/profile.php?id=100087288325076"}
-            target="_blank"
-          >
+          <Link to={"https://www.facebook.com/kapenya.cafe"} target="_blank">
             <Button
               variant={"ghost"}
               className=" hover:brightness-125 !text-foreground"
