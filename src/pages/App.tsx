@@ -30,7 +30,7 @@ function App() {
               className=" hover:brightness-125 !text-foreground"
             >
               <FaFacebook className="size-10" />
-              <span>Kapenya.</span>
+              <span>Kapenya Cafe</span>
             </Button>
           </Link>
           <Link to="https://www.instagram.com/kapenya.cafe/" target="_blank">
