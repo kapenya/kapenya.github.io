@@ -5,7 +5,6 @@ import "@/styles/utils.css";
 
 import menu1 from "@/assets/images/menu/1.png";
 import menu2 from "@/assets/images/menu/2.png";
-import menu3 from "@/assets/images/menu/3.png";
 
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MessageCircle } from "lucide-react";
@@ -21,7 +20,6 @@ function Menu() {
         <div className="space-y-4 h-fit w-full md:w-2/3">
           <img src={menu1} className="md:border-2 rounded border-[#edc5b3]" />
           <img src={menu2} className="md:border-2 rounded border-[#edc5b3]" />
-          <img src={menu3} className="md:border-2 rounded border-[#edc5b3]" />
         </div>
 
         <div className="flex items-center justify-center md:flex-row flex-col gap-2 mt-20">
