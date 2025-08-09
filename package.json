@@ -8,6 +8,7 @@
     "dev": "vite",
     "postbuild": "cp dist/index.html dist/404.html",
     "build": "tsc -b && vite build",
+    "type-check": "tsc -b",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
