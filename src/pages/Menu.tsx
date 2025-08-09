@@ -7,7 +7,7 @@ import menu1 from "@/assets/images/menu/1.png";
 import menu2 from "@/assets/images/menu/2.png";
 
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, MessageCircle } from "lucide-react";
+import { ArrowLeft, BikeIcon, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RouteDefinition } from "./main";
 
@@ -22,14 +22,14 @@ function Menu() {
           <img src={menu2} className="md:border-2 rounded border-[#edc5b3]" />
         </div>
 
-        <div className="flex items-center justify-center md:flex-row flex-col gap-2 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-8 md:mt-20">
           <Link
             to={"https://m.me/100087288325076"}
             target="_blank"
-            className="w-[230px]"
+            className="w-[230px] md:w-fit"
           >
             <Button
-              className="bg-gradient-to-r from-[#5a99ff] to-[#0866ff] hover:brightness-[95%] text-white hover:text-white"
+              className="w-full bg-gradient-to-r from-[#5a99ff] to-[#0866ff] hover:brightness-[95%] text-white hover:text-white"
               variant="outline"
               size="lg"
             >
@@ -37,6 +37,25 @@ function Menu() {
               <span>Message us on Facebook</span>
             </Button>
           </Link>
+          <Link
+            to={
+              "https://food.grab.com/ph/en/restaurant/online-delivery/2-C7KFRXWUNB4XCN"
+            }
+            target="_blank"
+            className="w-[230px] md:w-fit"
+          >
+            <Button
+              className="w-full bg-gradient-to-r from-[#00b14f] to-[#00ce5d] hover:brightness-[95%] text-white hover:text-white"
+              variant="outline"
+              size="lg"
+            >
+              <BikeIcon />
+              <span>Order on GrabFood</span>
+            </Button>
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 mt-2">
           <Link to={RouteDefinition.INDEX} className="w-[230px] md:w-fit">
             <Button
               className="bg-gradient-to-r from-[#fee6a0] to-[#fec29b] hover:brightness-[95%] w-full"
